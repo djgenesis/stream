@@ -712,7 +712,7 @@
       "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-croll",
-      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/CRUNCHIROL.png",
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/CRUNCHYROL.png",
       "isEnabled": true,
       "name": "🍿 CRUNCHY ROLL",
       "pattern": "(?i)\\bcrunch\\b",
