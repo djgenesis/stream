@@ -267,12 +267,25 @@
       "type": "filter"
     },
     {
+      "id": "at-dv-hdr10p",
+      "groupId": "g-rng",
+      "name": "Dolby Atmos+Vision & HDR10+",
+      "isEnabled": true,
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/d-av-hdr10+.png",
+      "pattern": "(?i)^(?=.*\\b(?:dolby\\s*atmos|atmos)\\b)(?=.*\\b(?:dolby\\s*vision|dovi|dv)\\b)(?=.*\\b(?:hdr10\\+|hdr10\\s*plus|hdr\\s*10\\s*\\+)\\b)",
+      "textColor": "#00000000",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "tagStyle": "filled",
+      "type": "filter"
+    },
+    {
       "id": "at-dv",
       "groupId": "g-rng",
       "name": "Dolby Atmos+Vision",
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/d-av.png",
-      "pattern": "(?i)^(?=.*\\b(?:dolby\\s*atmos|atmos)\\b)(?=.*\\b(?:dolby\\s*vision|dovi|dv)\\b)",
+      "pattern": "(?i)^(?=.*\\b(?:dolby\\s*atmos|atmos)\\b)(?=.*\\b(?:dolby\\s*vision|dovi|dv)\\b)(?!.*\\b(?:hdr10\\+|hdr10\\s*plus|hdr\\s*10\\s*\\+)\\b)",
       "textColor": "#00000000",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
