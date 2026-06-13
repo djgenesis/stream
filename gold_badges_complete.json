@@ -634,7 +634,7 @@
       "borderColor": "#00000000",
       "groupId": "gs",
       "id": "s-dsnp",
-      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/8x6cp2.png",
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/disney.png",
       "isEnabled": false,
       "name": "🍿 DISNEY+",
       "pattern": "(?i)\\b(dsnp|dsny|disney|disney\\+)\\b",
