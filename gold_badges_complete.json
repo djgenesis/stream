@@ -15,13 +15,6 @@
       "isExpanded": true
     },
     {
-      "borderColor": "#FF858283",
-      "color": "#000000",
-      "id": "ge",
-      "isExpanded": false,
-      "name": "Encoder"
-    },
-    {
       "id": "g-rng",
       "name": "Dynamic Range",
       "color": "#00000000",
@@ -55,6 +48,13 @@
       "id": "gs",
       "isExpanded": false,
       "name": "Streaming"
+    },
+    {
+      "borderColor": "#FF858283",
+      "color": "#000000",
+      "id": "ge",
+      "isExpanded": false,
+      "name": "Encoder"
     },
     {
       "id": "language",
@@ -189,71 +189,6 @@
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/hdrip.png",
       "pattern": "(?i)\\b(?:hd[-._ ]?rip|hdrip)\\b",
-      "textColor": "#00000000",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "tagStyle": "filled",
-      "type": "filter"
-    },
-    {
-      "borderColor": "#00000000",
-      "groupId": "ge",
-      "id": "s-h265-2",
-      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/H-265.png",
-      "isEnabled": true,
-      "name": "H265 HEVC",
-      "pattern": "(?i)\\b(?:x265|h[._-]?265|hevc|hev1|hvc1)\\b",
-      "tagColor": "#00000000",
-      "tagStyle": "filled",
-      "textColor": "#FFFFFF",
-      "type": "filter"
-    },
-    {
-      "borderColor": "#00000000",
-      "groupId": "ge",
-      "id": "s-h264-2",
-      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/H-264.png",
-      "isEnabled": true,
-      "name": "H264 AVC",
-      "pattern": "(?i)\\b(?:x264|h[._-]?264|avc1?|mpeg-?4\\s*avc)\\b",
-      "tagColor": "#00000000",
-      "tagStyle": "filled",
-      "textColor": "#FFFFFF",
-      "type": "filter"
-    },
-    {
-      "id": "av1",
-      "groupId": "ge",
-      "name": "AV1",
-      "isEnabled": true,
-      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/av1.png",
-      "pattern": "(?i)\\b(?:av01|av1)\\b",
-      "textColor": "#00000000",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "tagStyle": "filled",
-      "type": "filter"
-    },
-    {
-      "id": "divx",
-      "groupId": "ge",
-      "name": "DivX",
-      "isEnabled": true,
-      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/divx.png",
-      "pattern": "(?i)\\b(?:divx|div3|div4|dx50)\\b",
-      "textColor": "#00000000",
-      "tagColor": "#00000000",
-      "borderColor": "#00000000",
-      "tagStyle": "filled",
-      "type": "filter"
-    },
-    {
-      "id": "xvid",
-      "groupId": "ge",
-      "name": "XviD",
-      "isEnabled": true,
-      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/xvid.png",
-      "pattern": "(?i)\\b(?:xvid)\\b",
       "textColor": "#00000000",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
@@ -726,6 +661,71 @@
       "tagColor": "#00000000",
       "tagStyle": "filled",
       "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#00000000",
+      "groupId": "ge",
+      "id": "s-h265-2",
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/H-265.png",
+      "isEnabled": true,
+      "name": "H265 HEVC",
+      "pattern": "(?i)\\b(?:x265|h[._-]?265|hevc|hev1|hvc1)\\b",
+      "tagColor": "#00000000",
+      "tagStyle": "filled",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#00000000",
+      "groupId": "ge",
+      "id": "s-h264-2",
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/H-264.png",
+      "isEnabled": true,
+      "name": "H264 AVC",
+      "pattern": "(?i)\\b(?:x264|h[._-]?264|avc1?|mpeg-?4\\s*avc)\\b",
+      "tagColor": "#00000000",
+      "tagStyle": "filled",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "id": "av1",
+      "groupId": "ge",
+      "name": "AV1",
+      "isEnabled": true,
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/av1.png",
+      "pattern": "(?i)\\b(?:av01|av1)\\b",
+      "textColor": "#00000000",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "tagStyle": "filled",
+      "type": "filter"
+    },
+    {
+      "id": "divx",
+      "groupId": "ge",
+      "name": "DivX",
+      "isEnabled": true,
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/divx.png",
+      "pattern": "(?i)\\b(?:divx|div3|div4|dx50)\\b",
+      "textColor": "#00000000",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "tagStyle": "filled",
+      "type": "filter"
+    },
+    {
+      "id": "xvid",
+      "groupId": "ge",
+      "name": "XviD",
+      "isEnabled": true,
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/xvid.png",
+      "pattern": "(?i)\\b(?:xvid)\\b",
+      "textColor": "#00000000",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "tagStyle": "filled",
       "type": "filter"
     },
     {
