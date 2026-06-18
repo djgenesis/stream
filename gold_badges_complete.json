@@ -29,6 +29,13 @@
       "isExpanded": true
     },
     {
+      "id": "g-depth",
+      "name": "Color Depth",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
       "id": "g-snd",
       "name": "Sound Formats",
       "color": "#00000000",
@@ -195,7 +202,7 @@
       "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/H-265.png",
       "isEnabled": true,
       "name": "H265 HEVC",
-      "pattern": "(?i)\\b(?:x265|h[._-]?265|hevc|hev1|hvc1|main10)\\b",
+      "pattern": "(?i)\\b(?:x265|h[._-]?265|hevc|hev1|hvc1)\\b",
       "tagColor": "#00000000",
       "tagStyle": "filled",
       "textColor": "#FFFFFF",
@@ -364,6 +371,19 @@
       "isEnabled": true,
       "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/imax.png",
       "pattern": "(?i)\\bimax\\b(?!\\s*enhanced)",
+      "textColor": "#00000000",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "tagStyle": "filled",
+      "type": "filter"
+    },
+    {
+      "id": "10bit",
+      "groupId": "g-depth",
+      "name": "10-bit",
+      "isEnabled": true,
+      "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/10bit.png",
+      "pattern": "(?i)\\b(10[-._ ]?bit(?:s)?|main10)\\b",
       "textColor": "#00000000",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
