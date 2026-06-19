@@ -196,6 +196,19 @@
       "type": "filter"
     },
     {
+  "id": "dvdrip",
+  "groupId": "g-src",
+  "name": "DVDRip",
+  "isEnabled": true,
+  "imageURL": "https://raw.githubusercontent.com/djgenesis/badges/refs/heads/main/badges/dvdrip.png",
+  "pattern": "(?i)\\b(?:dvd[-._ ]?rip|dvd[-._ ]?r|dvd5|dvd9|r5|r6)\\b",
+  "textColor": "#00000000",
+  "tagColor": "#00000000",
+  "borderColor": "#00000000",
+  "tagStyle": "filled",
+  "type": "filter"
+    },
+    {
       "id": "dv",
       "groupId": "g-rng",
       "name": "DV",
