@@ -49,30 +49,29 @@ You can choose between **two different paths** depending on your visual preferen
 ### 🔹 Route A: Using Badges (Recommended Visual Setup)
 This path provides a rich graphical experience using clean icons and gold badges for stream resolutions, formats, and audio attributes.
 1. Open the configuration page of your chosen **AIOStreams** instance (pick a high-uptime instance from [IbbyLabs Uptime](https://uptime.ibbylabs.dev/)).
-2. Import/Upload the `aiostreams-config.json` or `aiostreams-template.json` file.
+2. Import/Upload the [`aiostreams-config.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-config.json) or [`aiostreams-template.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-template.json) file.
 3. Save and generate your installation link and add it to Stremio / Nuvio.
 4. Copy the raw url of [`gold_badges_complete.json`](https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/gold_badges_complete.json) and paste it into the **Custom Badges** field of the addon configuration.
 
 ### 🔹 Route B: Not Using Badges (Text Only Setup)
 This path provides a classic, distraction-free text format for users who prefer standard text strings over graphical badges.
 1. Open the configuration page of your chosen **AIOStreams** instance.
-2. Import/Upload the `aiostreams-config.json` or `aiostreams-template.json` file.
-3. In the **Formatter** settings, replace the contents (copy and paste the contents of `formatter-title-notusingbadges.json` into the Title section, and `formatter-description-notusingbadges.json` into the Description section).
-4. Leave the Custom Badges configuration field blank or disabled.
-5. Generate your installation link and add it to Stremio / Nuvio.
+2. Import/Upload the [`aiostreams-config.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-config.json) or [`aiostreams-template.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-template.json) file.
+3. In the **Formatter** settings, replace the contents (copy and paste the contents of [`formatter-title-notusingbadges.json`](https://github.com/djgenesis/stream/blob/main/formatter-title-notusingbadges.json) into the Title section, and [`formatter-description-notusingbadges.json`](https://github.com/djgenesis/stream/blob/main/formatter-description-notusingbadges.json) into the Description section).
+4. Save and generate your installation link and add it to Stremio / Nuvio.
 
 ### 🎬 Configuring AIOMetadata
 Regardless of the stream route chosen above, you must configure your metadata catalogs:
 1. Open the configuration page for your chosen **AIOMetadata** instance.
-2. Upload/Import the `aiometadata-config.json` file.
+2. Upload/Import the [`aiometadata-config.json`](https://github.com/djgenesis/stream/blob/main/aiometadata-config.json) file.
 3. Fill out all your personalized API keys (`gemini`, `tmdb`, etc.) in their respective setup fields.
-4. Generate the installation link and add it to Stremio / Nuvio.
+4. Save and generate the installation link and add it to Stremio / Nuvio.
 
 ---
 
 ## 📁 Included Movie & Series Catalogs
 
-By importing the `aiometadata-config.json` profile, the following dynamic metadata catalogs will be automatically integrated into your Stremio / Nuvio library interface:
+By importing the [`aiometadata-config.json`](https://github.com/djgenesis/stream/blob/main/aiometadata-config.json) profile, the following dynamic metadata catalogs will be automatically integrated into your Stremio / Nuvio library interface:
 
 ### 🎬 Movies Lists
 * **Popular Movies** – Currently trending movies globally.
