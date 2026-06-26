@@ -1,10 +1,10 @@
 {
   "metadata": {
     "id": "djb-2026-06-26.15-56-21-lgulpze",
-    "name": "Djb",
-    "description": "Djb",
+    "name": "djgenesis-aiostreams-template",
+    "description": "djgenesis-aiostreams-template",
     "source": "external",
-    "author": "Djb",
+    "author": "djgenesis",
     "version": "1.0.0",
     "category": "Debrid",
     "serviceRequired": false,
