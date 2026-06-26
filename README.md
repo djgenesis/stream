@@ -64,7 +64,7 @@ This path provides a rich graphical experience using clean icons and gold badges
 This path provides a classic, distraction-free text format for users who prefer standard text strings over graphical badges.
 1. Open the configuration page of your chosen **AIOStreams** instance (pick a high-uptime instance from [IbbyLabs Uptime](https://uptime.ibbylabs.dev/)).
 2. Download on your device and then upload in the Import section the [`aiostreams-config.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-config.json) or [`aiostreams-template.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-template.json) file.
-3. In the **Formatter** settings, replace the contents (copy and paste the contents of [`formatter-title-notusingbadges.json`](https://github.com/djgenesis/stream/blob/main/formatter-title-notusingbadges.json) into the Title section, and [`formatter-description-notusingbadges.json`](https://github.com/djgenesis/stream/blob/main/formatter-description-notusingbadges.json) into the Description section).
+3. In the **Formatter** settings, **REPLACE** the contents (copy and paste the contents of [`formatter-title-notusingbadges.json`](https://github.com/djgenesis/stream/blob/main/formatter-title-notusingbadges.json) into the Title section, and [`formatter-description-notusingbadges.json`](https://github.com/djgenesis/stream/blob/main/formatter-description-notusingbadges.json) into the Description section).
 4. Generate and fill out all your personalized API keys in their respective setup fields.
 5. Save and generate your installation link and add it to the "Stream app".
 
