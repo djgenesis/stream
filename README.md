@@ -1,8 +1,10 @@
 # "Stream app" Configuration Templates
 
-This repository contains a fully optimized collection of configuration templates and formatting files for the **AIOStreams** and **AIOMetadata** addons within the "Stream app" ecosystem. It is designed to deliver premium quality stream results with rich metadata, offering two distinct visual setups (with or without custom badges).
-
-Filtering and sorting logic is natively based on [Tam-Taro's SEL-Filtering-and-Sorting](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting).
+This repository contains a fully optimized collection of configuration templates and formatting files for the following:
+**AIOStreams**
+**AIOMetadata**
+**CutomFusionBadges**
+It is designed to deliver premium quality stream results with rich metadata, offering two distinct visual setups (with or without custom badges).
 
 ---
 
