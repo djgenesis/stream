@@ -58,7 +58,7 @@ This path provides a rich graphical experience using clean icons and gold badges
 2. Download on your device and then upload in the Import section the [`aiostreams-config.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-config.json) or [`aiostreams-template.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-template.json) file.
 3. Generate and fill out all your personalized API keys in their respective setup fields.
 4. Save and generate your installation link and add it to the "Stream app".
-5. Copy the raw url of [`gold_badges_complete.json`](https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/gold_badges_complete.json) and paste it into the **Custom Badges** in the settings of the "Stream app".
+5. Copy the raw url of [`gold_badges_complete.json`](https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/gold_badges_complete.json) and paste it into the **Fusion Badges URLs** in the "Streams" settings of the "Stream app". Also disable Size badges and addon logo and set the position to top.
 
 ### 🔹 Route B: Not Using Badges (Text Only Setup)
 This path provides a classic, distraction-free text format for users who prefer standard text strings over graphical badges.
