@@ -12,6 +12,8 @@ It is designed to deliver premium quality stream results with rich metadata, off
 ## 📋 Prerequisites
 
 Before starting the setup process, ensure you have the following:
+1. **Downloaded and installed your "Stream app"** on your mobile and TV (preferably Android /Google TV).
+2. **Registered and loged in** in your favorite "Streaming app" website as well as in the apps themselves.
 1. **An active Debrid Subscription** (e.g., RealDebrid, AllDebrid, Premiumize, etc.).
 2. **Accounts and API Keys** for the metadata and layout services. You will need to input your own keys in the configuration from these platforms:
    - [`"gemini"`](https://ai.google.dev/) (Google Gemini API)
