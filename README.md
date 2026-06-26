@@ -1,7 +1,7 @@
 # "Stream app" Configuration Templates
 
 This repository contains a fully optimized collection of configuration templates and formatting files for the following:
-   - **AIOStreams**
+   - **AIOStreams (two different formatters according to if you want to show badges or not**
    - **AIOMetadata**
    - **CutomFusionBadges**
 
@@ -52,7 +52,7 @@ The repository includes the following essential template files:
 
 Preferably do all the steps on your Android mobile phone. You can choose between **two different paths** depending on your visual preference for your stream layout:
 
-### 🔹 Route A: Using Badges (Recommended Visual Setup)
+### 🔹 Route A: Using Badges (RECOMENDED Visual Setup)
 This path provides a rich graphical experience using clean icons and gold badges for stream resolutions, formats, and audio attributes.
 1. Open the configuration page of your chosen **AIOStreams** instance (pick a high-uptime instance from [IbbyLabs Uptime](https://uptime.ibbylabs.dev/)).
 2. Download on your device and then upload in the Import section the [`aiostreams-config.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-config.json) or [`aiostreams-template.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-template.json) file.
