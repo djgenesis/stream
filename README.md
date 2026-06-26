@@ -4,6 +4,7 @@ This repository contains a fully optimized collection of configuration templates
    - **AIOStreams**
    - **AIOMetadata**
    - **CutomFusionBadges**
+
 It is designed to deliver premium quality stream results with rich metadata, offering two distinct visual setups (with or without custom badges).
 
 ---
