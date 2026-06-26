@@ -50,7 +50,7 @@ The repository includes the following essential template files:
 
 ## 🚀 Step-by-Step Setup Guide
 
-You can choose between **two different paths** depending on your visual preference for your stream layout:
+Preferably do all the steps on your Android mobile phone. You can choose between **two different paths** depending on your visual preference for your stream layout:
 
 ### 🔹 Route A: Using Badges (Recommended Visual Setup)
 This path provides a rich graphical experience using clean icons and gold badges for stream resolutions, formats, and audio attributes.
@@ -62,7 +62,7 @@ This path provides a rich graphical experience using clean icons and gold badges
 
 ### 🔹 Route B: Not Using Badges (Text Only Setup)
 This path provides a classic, distraction-free text format for users who prefer standard text strings over graphical badges.
-1. Open the configuration page of your chosen **AIOStreams** instance.
+1. Open the configuration page of your chosen **AIOStreams** instance (pick a high-uptime instance from [IbbyLabs Uptime](https://uptime.ibbylabs.dev/)).
 2. Import/Upload the [`aiostreams-config.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-config.json) or [`aiostreams-template.json`](https://github.com/djgenesis/stream/blob/main/aiostreams-template.json) file.
 3. In the **Formatter** settings, replace the contents (copy and paste the contents of [`formatter-title-notusingbadges.json`](https://github.com/djgenesis/stream/blob/main/formatter-title-notusingbadges.json) into the Title section, and [`formatter-description-notusingbadges.json`](https://github.com/djgenesis/stream/blob/main/formatter-description-notusingbadges.json) into the Description section).
 4. Generate and fill out all your personalized API keys in their respective setup fields.
@@ -70,7 +70,7 @@ This path provides a classic, distraction-free text format for users who prefer 
 
 ### 🎬 Configuring AIOMetadata
 Regardless of the stream route chosen above, you must configure your metadata catalogs:
-1. Open the configuration page for your chosen **AIOMetadata** instance.
+1. Open the configuration page for your chosen **AIOMetadata** instance (pick a high-uptime instance from [IbbyLabs Uptime](https://uptime.ibbylabs.dev/)).
 2. Upload/Import the [`aiometadata-config.json`](https://github.com/djgenesis/stream/blob/main/aiometadata-config.json) file.
 3. Generate and fill out all your personalized API keys in their respective setup fields.
 4. Save and generate the installation link and add it to "Stream app".
