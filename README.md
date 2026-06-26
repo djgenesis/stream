@@ -26,8 +26,9 @@ Before starting the setup process, ensure you have the following:
    - [`"simklTokenId"`](https://simkl.com/) (Simkl)
    - [`"anilistTokenId"`](https://anilist.co/) (AniList)
    - *...any other required provider api keys.*
+3. **Select your addon instence(s)** and track their real-time uptime status here: [IbbyLabs Uptime](https://uptime.ibbylabs.dev/).
 
-⚠️ **Important Infrastructure Advice:** For optimal performance and system stability, it is highly recommended to use **only one instance for AIOMetadata** and **one instance for AIOStreams** (or a single secondary instance strictly as a backup). You should select your addon instances and track their real-time uptime status here: [IbbyLabs Uptime](https://uptime.ibbylabs.dev/).
+⚠️ **Important Infrastructure Advice:** For optimal performance and system stability, it is highly recommended to use **only one instance for AIOMetadata** and **one instance for AIOStreams** (or a single secondary instance strictly as a backup).
 
 ---
 
