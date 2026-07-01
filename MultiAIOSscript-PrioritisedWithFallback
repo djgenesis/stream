@@ -1,0 +1,140 @@
+// YOUR INSTANCES (best / most-reliable FIRST) ────────
+const INSTANCES = [
+  " ",
+  " ",
+  " ",
+// add as many instances as you want, one per line
+];
+//  TIMEOUTS (edit these) ──────────────────────────────
+// How long a LIVE instance may take to finish scraping a /stream/ request:
+const STREAM_TIMEOUT_MS = 15000;  
+// 15s  <-- main knob
+// Max time to decide an instance is DOWN (checking manifest, not waiting for streams)
+const PROBE_TIMEOUT_MS = 2000;    
+// 2s
+// ──────────────────────────────────────────────────────────
+/
+const BASES = INSTANCES
+  .map(u => u.trim().replace(/\/manifest\.json\/?$/i, "").replace(/\/+$/, ""))
+  .filter(Boolean);
+export default {
+  async fetch(request) {
+    const url = new URL(request.url);
+    const path = url.pathname + url.search;
+    if (request.method === "OPTIONS") return new Response(null, { headers: cors() });
+    if (url.pathname === "/" || url.pathname === "")
+      return new Response(landing(url.host, BASES.length),
+        { headers: { "content-type": "text/html; charset=utf-8", ...cors() } });
+    if (url.pathname === "/health") return health();
+    const method = request.method;
+    const body = ["GET", "HEAD"].includes(method) ? undefined : request.body;
+    const isStream = /\/stream\//.test(url.pathname);
+    let lastError = "no instances configured";
+// Pass a good upstream response straight back, with CORS added.
+    const finalize = (res) => {
+      const headers = new Headers(res.headers);
+      headers.delete("content-encoding"); 
+// prevent double-decompress corruption
+      headers.delete("content-length");
+      for (const [k, v] of Object.entries(cors())) headers.set(k, v);
+      return new Response(res.body, { status: res.status, headers });
+    };
+// One stream attempt. withProbe=true runs a concurrent liveness probe that
+// aborts the request early if the instance is down. Returns a Response or null.
+    const tryStream = async (base, withProbe) => {
+      const ctrl = new AbortController();
+      let abortReason = null, settled = false;
+      const timer = setTimeout(() => { abortReason = "timed out"; ctrl.abort(); }, STREAM_TIMEOUT_MS);
+      if (withProbe) {
+        probe(base).then(alive => {
+          if (!alive && !settled) { abortReason = "probe says instance is down"; ctrl.abort(); }
+        });
+      }
+      try {
+        const res = await fetch(base + path, { method, body, redirect: "follow", signal: ctrl.signal });
+        settled = true;       
+// responding now -> probe can't abort us; slow body is safe
+        clearTimeout(timer);
+        if (res.status >= 500 || res.status === 429) { lastError = `instance returned ${res.status}`; return null; }
+        return res;
+      } catch (err) {
+        clearTimeout(timer);
+        lastError = abortReason || err.message;
+        return null;
+      }
+    };
+    if (isStream) {
+      let res = await tryStream(BASES[0], true);
+      if (res) return finalize(res); 
+// 2) #1 failed -> probe ALL remaining instances AT ONCE, jump to first alive.
+      const rest = BASES.slice(1);
+      const alive = await Promise.all(rest.map(probe));
+      for (let i = 0; i < rest.length; i++) {
+        if (!alive[i]) continue;                 
+// skip dead ones instantly
+        res = await tryStream(rest[i], false);   
+// already confirmed alive this round
+        if (res) return finalize(res);
+      }
+      return allDown(lastError);
+    }  
+    for (const base of BASES) {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), PROBE_TIMEOUT_MS);
+      try {
+        const res = await fetch(base + path, { method, body, redirect: "follow", signal: ctrl.signal });
+        clearTimeout(timer);
+        if (res.status >= 500 || res.status === 429) { lastError = `instance returned ${res.status}`; continue; }
+        return finalize(res);
+      } catch (err) {
+        clearTimeout(timer);
+        lastError = err.message;
+        continue;
+      }
+    }
+    return allDown(lastError);
+  },
+};
+async function probe(base) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), PROBE_TIMEOUT_MS);
+  try {
+    const r = await fetch(base + "/manifest.json", { redirect: "follow", signal: ctrl.signal });
+    clearTimeout(t);
+    return r.ok; 
+// 2xx = alive
+  } catch {
+    clearTimeout(t);
+    return false;
+  }
+}
+function allDown(detail) {
+  return new Response(JSON.stringify({ error: "All instances unavailable", detail }),
+    { status: 502, headers: { "content-type": "application/json", ...cors() } });
+}
+function cors() {
+  return {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+    "Access-Control-Allow-Headers": "*",
+  };
+}
+async function health() {
+  const results = await Promise.all(BASES.map(async (base) => {
+    const start = Date.now();
+    const ok = await probe(base);
+    return { instance: base, ok, ms: Date.now() - start };
+  }));
+  return new Response(JSON.stringify({ instances: results }, null, 2),
+    { headers: { "content-type": "application/json", ...cors() } });
+}
+function landing(host, count) {
+  const manifest = `https://${host}/manifest.json`;
+  return `<!doctype html><meta charset="utf-8"><title>AIOStreams failover proxy</title>
+<body style="font-family:system-ui;max-width:640px;margin:60px auto;padding:0 16px;line-height:1.5">
+<h1>✅ AIOStreams failover proxy is running</h1>
+<p>${count} instance(s) configured. Install this URL in Stremio:</p>
+<p><code style="background:#eee;padding:6px 10px;border-radius:6px">${manifest}</code></p>
+<p><a href="/health">Check instance health →</a></p>
+</body>`;
+}
