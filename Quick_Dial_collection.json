@@ -1,0 +1,131 @@
+[
+  {
+    "id": "collection-bc-d19775f4bf6c4269-community",
+    "title": "Quick Dial",
+    "folders": [
+      {
+        "id": "folder-bc-4e2184417056",
+        "title": "New Popular Movies",
+        "sources": [
+          {
+            "title": "New Popular Movies",
+            "sortBy": "original",
+            "tmdbId": 8689413,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/new_popular_movies_logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/new_popular_movies_coverflow.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/bingecat_movies_all_wall_grid.jpg"
+      },
+      {
+        "id": "folder-bc-a1e3c78a308d",
+        "title": "Best Popular Movies",
+        "sources": [
+          {
+            "title": "Best Popular Movies",
+            "sortBy": "original",
+            "tmdbId": 8689412,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/best_popular_movies_logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/best_popular_movies_coverflow.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/bingecat_movies_wall_grid.jpg"
+      },
+      {
+        "id": "folder-bc-7d8d8126e444",
+        "title": "All Popular Movies",
+        "sources": [
+          {
+            "title": "All Popular Movies",
+            "sortBy": "original",
+            "tmdbId": 8689397,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/all_popular_movies_logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/all_popular_movies_coverflow.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/bingecat_movies_all_wall_grid.jpg"
+      },
+      {
+        "id": "folder-bc-cd7dbfcae67f",
+        "title": "Completed TV Series",
+        "sources": [
+          {
+            "title": "Completed TV Series / Documentaries",
+            "sortBy": "original",
+            "tmdbId": 8692023,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/completed_tv_series_logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/completed_tv_series_coverflow.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://bingecat.com/collections/artwork-cache/12438/.eJwdzUsOwjAMRdG9ZFyRnxPHbAY5jQ0dUKo0EgPE3mmR3vSe9zG87zJuSzNXHyCWyWw8HuZquqxNuh3edm_fUjfr9RgTI5PTGhGII8W5CEbW4ABKK9ICFOKEiVUzXs7QTEaX9S5968s6DjoxCM4uK6GjwFhQqgtFo8sYUoAE1R1GAK-opWaASHUWEK0SK8EJvvqTT-t_8P0BBVk6MQ.mWx5cC2XO2GeNSezAxhfJAzXTUs/1fa9a7a90fb3749a393c8e73af20448d8ed2489a575aff67.webp"
+      },
+      {
+        "id": "folder-bc-2f4224afb8c7",
+        "title": "Christmas Movies",
+        "sources": [
+          {
+            "title": "Christmas Movies",
+            "sortBy": "original",
+            "tmdbId": 8689411,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/christmas_movies_logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/christmas_movies_coverflow.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://www.christmasraave.in/wp-content/uploads/2024/11/10.gif"
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "ROWS",
+    "community": {
+      "id": "quick-dial",
+      "version": 1,
+      "installMode": "copy",
+      "installedAt": 1788862561772,
+      "packCollectionId": "collection-bc-d19775f4bf6c4269",
+      "originalCollectionId": "collection-bc-d19775f4bf6c4269"
+    },
+    "showAllTab": true,
+    "backdropImageUrl": "https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/images/quick_dial_backdrop.jpg",
+    "focusGlowEnabled": true
+  }
+]
