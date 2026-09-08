@@ -7,6 +7,17 @@ This repository contains a fully optimized collection of ready made and maintain
 This guide provides the easiest path to streaming on a TV using Android and Windows devices. Everything is synced automatically inside the streaming app across all your devices.
 
 ---
+<img width="2048" height="1152" alt="quick_dial_backdrop" src="https://github.com/user-attachments/assets/b6be40b5-9fc9-4bd2-9902-49ceb0dd0dbf" />
+<img width="157" height="93" alt="all_popular_movies_logo" src="https://github.com/user-attachments/assets/02624673-8776-4166-a7ed-8a612bef4438" />
+<img width="146" height="116" alt="best_popular_movies_logo" src="https://github.com/user-attachments/assets/a3e05a2d-0621-4184-a443-cb65c3b5a38a" />
+<img width="149" height="118" alt="completed_tv_series_logo" src="https://github.com/user-attachments/assets/dc2d471f-2813-4292-9ed0-d573311f5dfd" />
+<img width="215" height="99" alt="christmas_movies_logo" src="https://github.com/user-attachments/assets/f71a0afb-8ae1-406d-ba4e-1204fd818fd1" />
+<img width="227" height="127" alt="new_popular_movies_logo" src="https://github.com/user-attachments/assets/1e114e39-4138-49a0-b416-91f734298671" />
+<img width="2424" height="1080" alt="Screenshot_20260908-151520" src="https://github.com/user-attachments/assets/266f2412-0ea7-4bed-b3b4-81c294a21713" />
+<img width="734" height="2579" alt="Screenshot_20260908-151727" src="https://github.com/user-attachments/assets/ad632e89-c575-4125-ab59-00dc5839288a" />
+<img width="1080" height="5754" alt="Screenshot_20260908-151843" src="https://github.com/user-attachments/assets/45313ecb-1494-48f0-81d7-f60294b1d032" />
+
+
 
 ## 📋 Prerequisites & Things You Need
 
