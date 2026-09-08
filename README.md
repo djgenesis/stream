@@ -84,7 +84,7 @@ Before starting, ensure you have set up the following accounts:
 ### Step 6: Player & Subtitle Settings (Recommended for Optimum Experience)
 
 1. In the streaming app, go to **Settings — Streams**.
-2. Paste the raw URL of `gold_badges_complete.json` (`[https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/gold_badges_complete.json](https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/gold_badges_complete.json)`) into **Fusion Badges URLs**. Disable size badges and addon logo, and set the badge position to **Top**.
+2. Paste the raw URL of `gold_badges_complete.json` [https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/gold_badges_complete.json](https://raw.githubusercontent.com/djgenesis/stream/refs/heads/main/gold_badges_complete.json) into **Fusion Badges URLs**. Disable size badges and addon logo, and set the badge position to **Top**.
 3. Go to **Settings — Advanced** and select **Remember last profile**.
 4. Click the **Settings (Gear Icon)** on the left sidebar:
 
