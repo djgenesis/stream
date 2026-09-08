@@ -2,7 +2,7 @@
 
 # "Stream app" Setup and Configuration
 
-This repository contains a fully optimized collection of configuration templates and formatting files for **AIOStreams**, **AIOMetadata**, and **CustomFusionBadges**.
+This repository contains a fully optimized collection of ready made and maintained by this repo configuration templates and formatting files for **AIOStreams**, **Collections**, and **CustomFusionBadges**.
 
 This guide provides the easiest path to streaming on a TV using Android and Windows devices. Everything is synced automatically inside the streaming app across all your devices.
 
