@@ -15,7 +15,8 @@ This guide provides the easiest path to streaming on a TV using Android and Wind
 <img width="199" height="111" alt="new_popular_movies_logo" src="https://github.com/user-attachments/assets/1e114e39-4138-49a0-b416-91f734298671" />
 <img width="2424" height="1080" alt="Screenshot_20260908-151520" src="https://github.com/user-attachments/assets/266f2412-0ea7-4bed-b3b4-81c294a21713" />
 <img width="367" height="1290" alt="Screenshot_20260908-151727" src="https://github.com/user-attachments/assets/ad632e89-c575-4125-ab59-00dc5839288a" />
-<img width="540" height="2877" alt="Screenshot_20260908-151843" src="https://github.com/user-attachments/assets/45313ecb-1494-48f0-81d7-f60294b1d032" />
+<img width="540" height="1290" alt="Screenshot_20260908-151843" src="https://github.com/user-attachments/assets/c6e94f6f-c3a1-4acb-83fc-af04cda08916" />
+
 
 
 
