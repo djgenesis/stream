@@ -74,12 +74,10 @@ Before starting, ensure you have set up the following accounts:
 
 ### Step 5: Configure Collections
 
-1. Open [Bingecat Collections](https://bingecat.com/collections) and create an account if you don't have one.
-2. Connect your **Stream app** in [Bingecat Usersettings](https://bingecat.com/usersettings).
-3. Click **Import** in [Bingecat Collections](https://bingecat.com/collections).
-4. Import the file "collections-bingecat" from this repository.
-5. Bingecat will update your profile's collections automatically.
-6. If you have created other profiles, upload the file "collections-profile" from this repository in .../account?tab=collections for each profile separately.
+1. Add [Quick Dial](https://nuvio.tv/community-collections/quick-dial) to your profile.
+2. Add [ImKaptain Mega Collection](https://nuvio.tv/community-collections/kaptain-s-mega-collection-v0-4) to your profile.
+3. If you have other profiles repeat steps 1 and 2 by switching to each profile first.
+4. Every so often (Once a month or even twice a year) Import to each profile the file QuickDial&ImKaptainCombo.json to keep your collections up to date.
 
 ---
 
